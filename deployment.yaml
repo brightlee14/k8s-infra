@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: python-proj
-        image: brightlee14/python-proj:latest
+        image: brightlee14/python-proj:32
         ports:
         - containerPort: 5000
