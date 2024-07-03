@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-deployment
+  name: python-proj-deployment
   labels:
-    app: hello
+    app: python-proj
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
-      app: hello
+      app: python-proj
   template:
     metadata:
       labels:
-        app: hello
+        app: python-proj
     spec:
       containers:
-      - name: hello-container
-        image: brightlee14/python-proj:29
+      - name: python-proj
+        image: brightlee14/python-proj:latest
         ports:
         - containerPort: 5000
